@@ -13,6 +13,7 @@ end
 
 group :test do
   gem 'rspec-rails', '2.14.0'
+  gem 'webrat', '0.5.0'
 end
 
 
