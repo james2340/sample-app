@@ -1,8 +1,7 @@
 module ApplicationHelper
 
-def logo
-   <%= link_to logo, root_path %> 
-end 
+
+
 # Return a title on a per-page basis.
 def title
 	base_title = "Ruby on Rails Tutorial Sample App"
