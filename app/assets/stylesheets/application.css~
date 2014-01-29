@@ -12,7 +12,7 @@
  *= require 'uploadify'
  *= require 'scaffold'
  *= require 'custom'
- *= require 'blueprint/screen'
+ *= require 'blueprint'
  *= require 'main'
  
  */
