@@ -5,6 +5,8 @@ describe "LayoutLinks" do
    
     it "should have a Home page at '/'" do
       get '/'
+      visit root_path
+      
       response.should have_selector('title', :content => "Home")
     end
 
@@ -27,7 +29,5 @@ describe "LayoutLinks" do
       get '/signup'
       response.should have_selector('title', :content => "Sign up")
     end
-
-   
 end
 

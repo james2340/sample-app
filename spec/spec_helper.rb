@@ -43,7 +43,6 @@ RSpec.configure do |config|
   #     --seed 1234
   config.order = "random"
 
-
   Webrat.configure do |config|
     config.mode = :rails
     config.open_error_files = false
