@@ -9,6 +9,7 @@ gem 'rails', '3.2.15.rc2'
 group :development, :test do
   gem 'sqlite3', '1.3.8'
   gem 'rspec-rails', '2.14.0'
+  gem 'activerecord-jdbcsqlite3-adapter', '1.3.6'
 end
 
   gem 'gravatar_image_tag', '0.1.0'
