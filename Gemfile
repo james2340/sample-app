@@ -9,14 +9,16 @@ gem 'rails', '3.2.15.rc2'
 group :development, :test do
   gem 'sqlite3', '1.3.8'
   gem 'rspec-rails', '2.14.0'
-  gem 'annotate-models', '1.0.4'
 end
+
+  gem 'gravatar_image_tag', '0.1.0'
 
 group :test do
   gem 'rspec', '2.14.0'
   gem 'webrat', '0.7.3'
   gem 'capybara', '2.2.0'
   gem 'selenium-webdriver', '2.37.0'
+  gem 'factory_girl_rails', '1.0'
 end
 
   gem 'sass-rails',   '3.2.3'
