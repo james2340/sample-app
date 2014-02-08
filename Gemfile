@@ -1,18 +1,16 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.15.rc2'
+gem 'gravatar_image_tag', '0.1.0'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 
 group :development, :test do
-  gem 'sqlite3', '1.3.8'
+  gem 'pg', '0.17.1'
   gem 'rspec-rails', '2.14.0'
-  gem 'activerecord-jdbcsqlite3-adapter', '1.3.6'
 end
-
-  gem 'gravatar_image_tag', '0.1.0'
 
 group :test do
   gem 'rspec', '2.14.0'
