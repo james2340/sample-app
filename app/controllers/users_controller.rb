@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-<<<<<<< HEAD
+
   
     def show
        @user = User.find(params[:id])
@@ -9,9 +9,8 @@ class UsersController < ApplicationController
     def new
        @title = "Sign up"
     end
-=======
+
   def new
     @title = "Sign up"
   end
->>>>>>> filling-in-layout
 end

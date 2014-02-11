@@ -1,5 +1,5 @@
 SampleApp::Application.routes.draw do
-<<<<<<< HEAD
+
   resources :users
   
 
@@ -12,7 +12,7 @@ SampleApp::Application.routes.draw do
   match '/help', :to => 'pages#help'
 
   root :to => 'pages#home'
-=======
+
   get "users/new"
 
   match '/signup', :to => 'users#new'
@@ -24,7 +24,7 @@ SampleApp::Application.routes.draw do
   match '/about', :to => 'pages#about'
 
   match '/help', :to => 'pages#help'
->>>>>>> filling-in-layout
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
