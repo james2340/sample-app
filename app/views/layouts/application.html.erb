@@ -2,6 +2,7 @@
 <html>
  <head>
    <title><%= title %></title>
+<<<<<<< HEAD
     <%= csrf_meta_tag %>
     <%= render 'layouts/stylesheets' %> 
  </head>
@@ -13,6 +14,18 @@
 	</section>
 	<%= render 'layouts/footer' %>
 	<%= debug(params) if Rails.env.development? %>
+=======
+   <%= csrf_meta_tag %>
+   <%= render 'layouts/stylesheets' %>
+ </head>
+ <body>
+    <div class="container">
+	<%= render 'layouts/header' %>
+	<section class="round">
+	 <%= yield %>
+	 </section>
+	 <%= render 'layouts/footer' %>
+>>>>>>> filling-in-layout
      </div>
  </body>
 </html>

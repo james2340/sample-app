@@ -9,10 +9,19 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+<<<<<<< HEAD
  *= require 'uploadify'
  *= require 'scaffold'
  *= require 'custom'
  *= require 'blueprint/screen'
  *= require 'main'
  
+=======
+ *= require 'blueprint/screen'
+ *= require 'colorbox/colorbox'
+ *= require 'uploadify'
+ *= require 'scaffold'
+ *= require 'custom'
+ *= require 'main'
+>>>>>>> filling-in-layout
  */
