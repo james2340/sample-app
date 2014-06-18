@@ -20,7 +20,6 @@ describe UsersController do
                       @user = test_sign_in(Factory(:user))
                       second = Factory(:user, :email => "another@example.com")
                       third = Factory(:user, :email => "another@example.net")
-
                       @users = [@user, second, third]
 		      30.times do
 			@users << Factory(:user, :email => Factory.next(:email))
