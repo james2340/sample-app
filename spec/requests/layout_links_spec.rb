@@ -29,36 +29,55 @@ describe "LayoutLinks" do
     end
 
 
+    it "should have the right links on the layout" do
+       lambda do
+       visit root_path
+
+       click_link "About"
+       response.should have_selector('title', :content => "About")
+
+       click_link "Help"
+       response.should have_selector('title', :content => "Help")
+       end
+    end
+
+
 
     describe "when not signed in" do
+
         it "should have a signin link" do
+           lambda do
            visit root_path
            response.should have_selector("a", :href => signin_path,
                                               :content => "Sign in")
-        end
+	   end
+	end
     end
 
 
     describe "when signed in" do
 
 	    before(:each) do
+	      lambda do
               @user = Factory(:user)
-              visit signin_path
-              fill_in :email, :with => @user.email
-              fill_in :password, :with => @user.password
-              click_button
-            end
+              integration_sign_in(@user)
+	      end
+	    end 
 
 	    it "should have a signout link" do
+	       lambda do
                visit root_path
                response.should have_selector("a", :href => signout_path,
                                                   :content => "Sign out")
-            end
+	       end
+	    end 
 
 	    it "should have a profile link" do
+	       lambda do
 	       visit root_path
 	       response.should have_selector("a", :href => user_path(@user),
 					          :content => "Profile")
+	       end
 	    end
        end
 end
